@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, h1,h2,h3,h4,h5,p {
+    font-family: 'Poppins';
+    margin : 0; padding : 0;
+}
+
+body {
+    background-color: white;
+    margin : 0;
+    color: #393E46;
+}
+
+hr {
+    border : 1px solid #393E46;
+    margin : 20px 0;
+}
+
+header nav {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 4em;
+    background : white;
+    box-shadow: 1px 1px 10px #EEB76B;
+    position: fixed;
+    top : 0;
+    left : 0;
+    right :0;
+    padding: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width : 30%;
+    align-items: center;
+}
+
+.containerHeader {
+    width : 90%;
+    display: flex;
+    margin : auto;
+    margin-top : 3.5rem;
+
+    height: 100vh;
+}
+
+.listHeaderContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 50vh;
+}
+
+.listHeaderContent > li {
+    background: #ffdfb3;
+    padding: 10px;
+    list-style: none;
+    border-radius: 15px;
+    margin: 7px 0;
+    transition: .5s ease;
+}
+
+.listHeaderContent > li:hover {
+    transform: translateX(20px);
+    transform: scale(1.05);
+}
+
+.containerHeader img {
+    height: 95%;
+    
+}
+
+.headerContent {
+    padding : 2em 3em;
+    
+}
+
