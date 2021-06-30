@@ -101,6 +101,7 @@ header nav ul {
     border-radius: 10px;
     list-style: none;
     display: flex;
+    width : 100%;
 }
 
 .articleContainer > li > img {
@@ -109,4 +110,10 @@ header nav ul {
 
 .articleContainer > li > div {
     padding : 10px;
+}
+
+.articleContainer > li > div > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #cc8522;
 }
