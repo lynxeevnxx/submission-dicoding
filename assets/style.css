@@ -12,22 +12,31 @@ body {
 }
 
 hr {
-    border : 1px solid #393E46;
+    border-radius: 20px;
+    border : 2px solid #EEB76B;
     margin : 20px 0;
+
 }
 
+
+
 header nav {
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
-    padding : 0 4em;
-    background : white;
+    
+    background: white;
     box-shadow: 1px 1px 10px #EEB76B;
     position: fixed;
     top : 0;
     left : 0;
     right :0;
     padding: 1.5rem;
+}
+
+header nav div {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 4em;
+    width : 88%;
 }
 
 header nav ul {
@@ -38,13 +47,13 @@ header nav ul {
     align-items: center;
 }
 
+
 .containerHeader {
     width : 90%;
     display: flex;
     margin : auto;
     margin-top : 3.5rem;
-
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .listHeaderContent {
@@ -52,7 +61,7 @@ header nav ul {
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .listHeaderContent > li {
@@ -70,7 +79,7 @@ header nav ul {
 }
 
 .containerHeader img {
-    height: 95%;
+    height: 95vh;
     
 }
 
@@ -79,3 +88,25 @@ header nav ul {
     
 }
 
+.mainContainer {
+    width : 80%;
+    margin :auto;
+}
+
+
+.articleContainer > li {
+    padding : 5px;
+    background : #ffdfb3;
+    margin: 10px;
+    border-radius: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.articleContainer > li > img {
+    width : 200px;
+}
+
+.articleContainer > li > div {
+    padding : 10px;
+}
