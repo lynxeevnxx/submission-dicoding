@@ -11,6 +11,12 @@ body {
     color: #393E46;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 hr {
     border-radius: 20px;
     border : 2px solid #EEB76B;
@@ -21,7 +27,7 @@ hr {
 
 
 header nav {
-    
+    z-index: 10;
     background: white;
     box-shadow: 1px 1px 10px #EEB76B;
     position: fixed;
@@ -29,6 +35,19 @@ header nav {
     left : 0;
     right :0;
     padding: 1.5rem;
+}
+
+header nav #active {
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: .5s ease;
+    color :#EEB76B;
+}
+
+header nav a {
+    color :#393E46;
+    text-decoration: none;
+
 }
 
 header nav div {
@@ -91,8 +110,32 @@ header nav ul {
 .mainContainer {
     width : 80%;
     margin :auto;
+    display: flex;
+    justify-content: space-between;
 }
 
+.mainContainer article {
+    width : 60%;
+}
+
+.mainContainer aside {
+    width: 35%;
+}
+
+.mainContainer h1 {
+    padding-left: 15px;
+    text-align:left;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.mainContainer aside div {
+    padding : 15px;
+    background : #ffdfb3;
+    margin: 10px;
+    border-radius: 10px;
+}
 
 .articleContainer > li {
     padding : 5px;
@@ -100,14 +143,31 @@ header nav ul {
     margin: 10px;
     border-radius: 10px;
     list-style: none;
+    width : 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.articleContainer > li > img{
+    width :95%;
+    margin : auto auto;
+}
+
+.mainContainer img {
+    transition: .3s ease;
+    border: 3px solid #fdc16c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mainContainer img:hover {
+    transform: scale(1.03);
+}
+
+aside img {
+    margin : auto;
     width : 100%;
 }
-
-.articleContainer > li > img {
-    width : 200px;
-}
-
 .articleContainer > li > div {
     padding : 10px;
 }
