@@ -70,3 +70,66 @@ for (list of navLists) {
     })
 }
 
+const myBio = document.querySelector("aside");
+
+function asideFloating () {
+    let intAside = setInterval(() => {
+        myBio.style.transform = 'translateY(50px)'
+        setTimeout(() => {
+            myBio.style.transform = 'translateY(0)'
+        },3000)
+
+        if (window.innerWidth < 600) {
+            clearInterval(intAside)
+        }
+    }, 6000)
+
+    
+}
+
+asideFloating()
+
+const btnNav  = document.querySelector('.barNavigasi');
+let btnCondition = false
+const navListEl = document.querySelector('header nav ul');
+
+if (window.innerWidth < 600) {
+    
+    btnNav.addEventListener('click', () => {
+        btnCondition = !btnCondition
+
+        if (btnCondition) {
+            btnNav.style.transform = 'rotate(90deg)'
+        } else {
+            btnNav.style.transform = 'rotate(0)'
+        }
+
+
+        if (btnCondition) {
+            navListEl.style.opacity = '100%';
+            console.log(navListEl);
+        } else {
+            navListEl.style.opacity = '0%';
+        }
+    })
+}
+
+
+const messageBox = document.querySelector('.messageBox');
+const btnMessageBox = messageBox.querySelector('button');
+
+
+btnMessageBox.addEventListener('click', function () {
+    messageBox.style.transform = 'translateX(25%)';
+    messageBox.style.opacity = '0';
+})
+
+
+const greeting = document.getElementById('greetingTxt');
+
+function iterationTxt () {
+    greeting.style.transform = 'translateX(0)'
+    greeting.style.opacity = '100%'
+}
+
+iterationTxt()
